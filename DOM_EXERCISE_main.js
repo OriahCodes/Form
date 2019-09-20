@@ -18,7 +18,19 @@ const err = function(errText){
     alert.setAttribute("id","alert")
     alert.innerHTML = errText
     document.getElementById("alerts").appendChild(alert)
+}
 
+const checkValidation = function(){
+    const alertBox = document.getElementById("alerts")
+    if (!alertBox.hasChildNodes()) {
+        document.getElementById("container").style.display = "none"
+        
+        const name = document.getElementById("name").value
+        const welcome = document.createElement("Div")
+        welcome.setAttribute("id","welcomeMessage")
+        welcome.innerHTML = name + ", Welcome!"
+        document.body.appendChild(welcome)
+    }
 }
 
 const validate = function(){
@@ -55,6 +67,9 @@ const validate = function(){
         }
     
     addHeight()
+
+    checkValidation()
 }
+
 
 

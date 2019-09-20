@@ -58,13 +58,24 @@ input{
     font-size: 15px;
 }
 
+
+#alerts{
+    display: inline-block;
+}
+
 #alert{
     color:#f1c40f;
     font-family: helvetica;
     position: relative;
-    margin-top: 20px
+    margin-top: 20px;
+    width: 300px;
 }
 
-/* #alerts{
-    height: 18px;
-} */
+#welcomeMessage{
+    color: #6c5ce7;
+    font-family: bold Helvetica;
+    font-size: 50px;
+    position: absolute;
+    top: 200px;
+    left: 34%;
+}
