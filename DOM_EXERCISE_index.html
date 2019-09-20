@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Visual overload</title>
+    <link rel="stylesheet" href="DOM_EXERCISE_style.css" />
+</head>
+<body>
+    <div id="container">
+
+        <div class="divBox" >
+            <p class="text">NAME</p>
+            <input class="inputBox longInput" type="text" id="name"> 
+        </div >
+
+        <div class="shortDiv divBox"  >
+            <p class="text">DESIRED SALARY</p>
+            <input class="inputBox shortInput" type="number" id="salary"> 
+        </div>
+
+        <div class="shortDiv divBox" >
+            <p class="text">BIRTHDAY</p>
+            <input class="inputBox shortInput" type="date" id="birthday"> 
+        </div>
+
+        <div class="divBox" >
+            <p class="text">PHONE</p>
+            <input class="inputBox longInput" type="tel" name="phone" id="phone"> 
+        </div>
+
+        <button onclick="validate()"">Submit</button>
+
+        <div id="alerts"></div>
+
+    </div>
+    <script src="DOM_EXERCISE_main.js"></script>
+</body>
+
+</html>
